@@ -1,26 +1,28 @@
-How to deploy Django to Railway.app
+<h1>How to deploy Django to Railway.app</h1>
 <br>
 
-Library
+<h2>Library</h2>
 <br>
-1. Gunicorn - 'pip install gunicorn'
-2. Whitenoise - 'pip install whitenoise'
-<br>
-
-Requirements
-<br>
-Create requirements.txt file.
-In cmd write 'freeze > requirements.txt'
+<h3>Gunicorn</h3> <code>pip install gunicorn</code>
+<h3>Whitenoise</h3> <code>pip install whitenoise</code>
 <br>
 
-Settings
+<h2>Requirements</h2>
 <br>
-1. 'import os'
-2. 'ALLOWED_HOSTS = ["name app"]'
-3. 'INSTALLED_APPS = ['whitenoise.runserver_nostatic',]'
-4. 'MIDDLEWARE = ["whitenoise.middleware.WhiteNoiseMiddleware",]'
-5.  'STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"'
+<h3>Create requirements.txt file.</h3>
+<h3>In cmd write</h3><code>freeze > requirements.txt</code>
+<br>
 
-
+<h2>Settings</h2>
+<br>
+<code>import os
+<br>
+ALLOWED_HOSTS = ["name app"]
+<br>
+INSTALLED_APPS = ['whitenoise.runserver_nostatic',]
+<br>
+MIDDLEWARE = ["whitenoise.middleware.WhiteNoiseMiddleware",]
+<br>
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"</code>

@@ -1,13 +1,14 @@
 <h1>How to deploy Django to Railway.app</h1>
 
 <h2>Pip Install</h2>
-<h3>Gunicorn</h3> <code>pip install gunicorn</code>
-<h3>Whitenoise</h3> <code>pip install whitenoise</code>
+<h3>Gunicorn</h3> <pre>pip install gunicorn</pre>
+<h3>Whitenoise</h3> <pre>pip install whitenoise</pre>
 <br>
 
 <h2>Requirements</h2>
 <h3>Create requirements.txt file.</h3>
-<h3>In cmd write</h3><code>freeze > requirements.txt</code>
+<h3>In cmd write</h3>
+<pre>freeze > requirements.txt</pre>
 <br>
 
 <h2>Settings:</h2>

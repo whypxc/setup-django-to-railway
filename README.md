@@ -12,18 +12,16 @@
 
 <h2>Settings:</h2>
 <pre class="notranslate">
-    <code>
-        import os
+import os
 
-        ALLOWED_HOSTS = ["name app"]
+ALLOWED_HOSTS = ["name app"]
 
-        INSTALLED_APPS = ['whitenoise.runserver_nostatic',]
+INSTALLED_APPS = ['whitenoise.runserver_nostatic',]
 
-        MIDDLEWARE = ["whitenoise.middleware.WhiteNoiseMiddleware",]
+MIDDLEWARE = ["whitenoise.middleware.WhiteNoiseMiddleware",]
 
-        STATIC_URL = '/static/'
-        STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-        STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
-    </code>
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
 </pre>
 

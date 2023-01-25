@@ -1,4 +1,4 @@
-<h1>How to deploy Django to Railway.app</h1>
+<h1>How to setup Django to Railway.app</h1>
 
 <h2>Pip Install</h2>
 <h3>Gunicorn</h3> <pre>pip install gunicorn</pre>
